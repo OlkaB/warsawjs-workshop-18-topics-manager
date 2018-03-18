@@ -3,5 +3,16 @@
     "version": "1.0.0",
     "main": "index.js",
     "author": "Aleksandra Barecka",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "add": "^2.0.6",
+        "babel-plugin-transform-object-assign": "^6.22.0",
+        "bulma": "^0.6.2",
+        "hellojs": "^1.16.1",
+        "node-sass": "^4.7.2",
+        "parcel-bundler": "^1.6.2"
+    },
+    "scripts": {
+        "dev": "parcel index.html"
+    }
 }
