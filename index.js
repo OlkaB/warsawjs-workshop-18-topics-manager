@@ -60,7 +60,7 @@ document.querySelector('.js-add-topic').addEventListener('click', addTopic);
 
 function addTopic(event) {
     event.preventDefault();
-    const topicTitle = document.querySelector
+    const topicTitle = document.querySelector;
     if (topicTitle) {
         const addedTopicData = {
             topicId: Date.now(),
