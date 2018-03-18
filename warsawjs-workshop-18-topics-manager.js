@@ -71,7 +71,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({3:[function(require,module,exports) {
+})({6:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -108,7 +108,7 @@ var Helpers = function () {
 }();
 
 exports.default = Helpers;
-},{}],7:[function(require,module,exports) {
+},{}],13:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -295,7 +295,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],5:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 var process = require("process");
 /*! hellojs v1.16.1 | (c) 2012-2017 Andrew Dodson | MIT https://adodson.com/hello.js/LICENSE */
 // ES5 Object.create
@@ -6234,13 +6234,13 @@ if (typeof module === 'object' && module.exports) {
 	module.exports = hello;
 }
 
-},{"process":7}],4:[function(require,module,exports) {
+},{"process":13}],7:[function(require,module,exports) {
 module.exports = {
 
     client_id: 'dace173e90c412143de2',
-    redirect_uri: 'https://olkab.github.io/warsawjs-workshop-18-topics-manager/'
+    redirect_uri: 'http://localhost:1234'
 };
-},{}],9:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -6270,7 +6270,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],8:[function(require,module,exports) {
+},{}],14:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -6301,13 +6301,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":9}],6:[function(require,module,exports) {
+},{"./bundle-url":15}],11:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":8}],2:[function(require,module,exports) {
+},{"_css_loader":14}],4:[function(require,module,exports) {
 'use strict';
 
 var _helper = require('./helper');
@@ -6428,7 +6428,7 @@ function renderTopic(addedTopicData) {
 }
 
 new Promise(function (resolved, reject) {});
-},{"./helper":3,"hellojs":5,"./config":4,"bulma":6}],10:[function(require,module,exports) {
+},{"./helper":6,"hellojs":10,"./config":7,"bulma":11}],16:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -6450,7 +6450,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '46325' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '38975' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -6551,5 +6551,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[10,2])
+},{}]},{},[16,4])
 //# sourceMappingURL=/dist/warsawjs-workshop-18-topics-manager.map
