@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WarsawJS #18 Topics Manager</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/dist/warsawjs-workshop-18-topics-manager.css"></head>
+
+<body class="section">
+    <nav class="navbar">
+        <div class="navbar-start">
+            <div class="navbar-item"><a id="GitHub-login" href="" class="button">Login through GitHub</a></div>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item" id="user-panel">User</div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <article class="message">
+                    <div class="message-header">
+                        <p>Zgłoś propozycję warsztatów</p>
+                    </div>
+                    <div class="message-body">
+                        <form action="" class="js-form-add-topic">
+                            <div class="field">
+                                <label class="label">
+                                        <sup class="has-text-danger">*</sup> Temat
+                                    </label>
+                                <div class="control">
+                                    <input class="input js-topic-title" type="text" name="topic" required="">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">
+                                        <sup class="has-text-danger">*</sup> Opis
+                                    </label>
+                                <div class="control">
+                                    <textarea class="textarea js-topic-descr" name="description" required=""></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="button is-link js-add-topic">Prześlij</button>
+                                </div>
+                                <div class="control">
+                                    <button class="button is-text js-cancel-adding-topic" type="reset">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <h1 class="title">Topics Manager</h1>
+        <div class="columns is-multiline js-topics-list">
+        </div>
+    </section>
+    <script src="/dist/warsawjs-workshop-18-topics-manager.js"></script>
+</body>
+
+</html>
